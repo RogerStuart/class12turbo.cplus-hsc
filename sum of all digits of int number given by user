@@ -1,0 +1,27 @@
+#include<iostream.h>
+#include<conio.h>
+
+void main() {
+	clrscr();
+
+	int d;
+	int sum=0;
+	int num;
+
+	cout<<"enter number to find its sum (eg. 145= 1+4+5=10).......";
+	cin>>num;
+
+	while(num!=0) {
+
+		d=num%10;
+		sum=sum+d;
+		num=num/10;
+	}
+
+	cout<<"The sum of added integers is"<<endl;
+	cout<<sum;
+
+	getch();
+
+
+}
