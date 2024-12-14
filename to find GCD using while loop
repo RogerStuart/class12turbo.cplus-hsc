@@ -1,22 +1,25 @@
-#include <iostream.h>
-#include <conio.h>
+#include<iostream.h>
+#include<conio.h>
 
-void main(){
-    clrscr();
-    int a,b;
-     
-     cin>>a>>b;
-     while (a!=b)
-     {
-         if (a>b)
-         a=a-b;
-         
-         if (b>a)
-         b=b-a;
-     }
-     cout<<a;              
-     
-     getch();
-         
-        
+void main() {
+	clrscr();
+
+	int a;
+	int b;
+
+	cout<<"Enter two integers to find GCD";
+	cin>>a>>b;
+
+	while (a!=b)
+	{	if (a>b)
+			a=a-b;
+
+		if (b>a)
+			b=b-a;
+	}
+
+	cout<<"THE GCD IS.....";
+	cout<<a;
+
+	getch();
 }
