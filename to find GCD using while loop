@@ -1,0 +1,22 @@
+#include <iostream.h>
+#include <conio.h>
+
+void main(){
+    clrscr();
+    int a,b;
+     
+     cin>>a>>b;
+     while (a!=b)
+     {
+         if (a>b)
+         a=a-b;
+         
+         if (b>a)
+         b=b-a;
+     }
+     cout<<a;              
+     
+     getch();
+         
+        
+}
