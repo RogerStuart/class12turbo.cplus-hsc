@@ -1,22 +1,33 @@
-#include <iostream.h>
-#include <conio.h>
+#include<iostream.h>
+#include<conio.h>
 
 void main() {
-
 	clrscr();
 
 	int num;
-	cout<<"  Enter The Number";
+	int i;
+
+	cout<<"Enter any integer number"<<endl;
 	cin>>num;
 
-	for(int i=2; i<=num-1; i++)
-	{	if (num%i==0)
+	for (i=2; i<=num-1 ; i++)
+
+	{
+		if (num%i==0)
 			break;
 	}
 
-	{	if (i==num)
-			cout<<"Prime no.";
+	{
+		if (i==num)
+			cout<<"Prime number"<<endl;
+
 		else
-			cout<<"Not Prime";
+
+
+			cout<<"NOT a Prime number"<<endl;
+		getch();
+
+
 	}
-	getch();
+
+}
