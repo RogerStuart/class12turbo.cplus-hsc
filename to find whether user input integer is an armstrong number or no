@@ -1,0 +1,33 @@
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+	clrscr();
+
+	long num;
+	long d, sum = 0;
+
+	cout<<"Enter any int number: ";
+	cin>>num; // num = 145 1 + 4 + 5 = 10
+
+	long n = num;
+
+	while(num!=0)
+	{
+		d = num % 10; // num = 145 % 10 5
+
+		sum = sum + d*d*d;
+
+		num = num / 10; // num = 145 / 10 14
+	}
+
+	cout<<"Sum = "<<sum<<endl;
+
+	if(n == sum)
+		cout<<"Armstrong number";
+	else
+		cout<<"not Armstrong number";
+
+	getch();
+}
