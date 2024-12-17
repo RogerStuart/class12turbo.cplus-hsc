@@ -1,0 +1,34 @@
+
+#include <iostream.h>
+#include <conio.h>
+
+float area(float);
+float circumference(float);
+float A;
+float C;
+
+void main() {
+	clrscr();
+	
+    float r;
+	cout<<"Enter the radius"<<endl;
+	cin>>r;
+	float A=area(r);
+	float C=circumference(r);
+	cout<<"The area is="<<A<<endl;
+	cout<<"The Circumference is="<<C;
+	getch();
+	
+}
+
+float area(float x)
+{
+	A=3.14*x*x;
+	return A;
+}
+
+float circumference(float y)
+{
+    C=2*3.14*y;
+    return C;
+}
