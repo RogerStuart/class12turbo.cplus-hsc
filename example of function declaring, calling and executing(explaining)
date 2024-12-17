@@ -1,0 +1,25 @@
+#include <iostream.h>
+#include <conio.h>
+
+float product (float,float);
+
+void main()
+{
+    clrscr();
+    
+    float number1, number2;
+    
+    cout<<"Enter 2 numbers to multiply"<<endl;
+    cin>>number1>>number2;
+    
+    float prod=product(number1,number2);
+    cout<<"The product is"<<endl;
+    cout<<prod;
+    
+    getch();
+    
+}
+
+ float product(float x, float y)
+    { float prod=x*y;
+    return prod;}
