@@ -1,0 +1,55 @@
+#include<iostream.h>
+#include<conio.h>
+
+int addn(int, int);
+int diffn(int,int);
+int prodn(int,int);
+float divin(int, int);
+
+void main() {
+	clrscr();
+
+	int numa,numb;
+	cout<<"Enter two numbers"<<endl;
+	cin>>numa>>numb;
+
+	int sum=addn(numa,numb);
+	int diff=diffn(numa,numb);
+	int prod=prodn(numa,numb);
+	float divi=divin(numa,numb);
+
+	cout<<"The sum is= ";
+	cout<<sum<<endl;
+
+	cout<<"The difference is= ";
+	cout<<diff<<endl;
+
+	cout<<"The product is = ";
+	cout<<prod<<endl;
+
+	cout<<"The division is = ";
+	cout<<divi<<endl;
+
+
+	getch();
+}
+
+int addn(int x, int y)
+{	int sum=x+y;
+	return sum;
+}
+
+int diffn(int x, int y)
+{	int diff=x-y;
+	return diff;
+}
+
+int prodn(int x,int y)
+{	int prod=x*y;
+	return prod;
+}
+
+float divin(int x,int y)
+{	float divi=x/y;
+	return divi;
+}
