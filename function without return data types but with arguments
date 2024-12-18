@@ -1,0 +1,23 @@
+#include<iostream.h>
+#include<conio.h>
+
+void check(int);
+void main()
+{
+	clrscr();
+
+	int num;
+	cout<<"Enter any int number"<<endl;
+	cin>>num;
+
+	check(num);
+
+	getch();
+}
+void check(int num)
+{
+	if(num%2==0)
+		cout<<"ITS EVEN";
+	else
+		cout<<"ITS ODD";
+}
