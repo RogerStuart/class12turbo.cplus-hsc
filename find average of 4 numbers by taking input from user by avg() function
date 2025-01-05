@@ -1,0 +1,26 @@
+#include<iostream.h>
+#include<conio.h>
+
+float average(float, float, float ,float); 
+
+void main(){
+    
+    clrscr();
+    
+    float a,b,c,d;
+    
+    cout<<"Enter 4 Numbers to find the average"<<endl;
+    cin>>a>>b>>c>>d;
+    
+    float avg=average(a, b, c, d);
+    cout<<avg;
+    
+    getch();
+}
+
+float average(float w, float x, float y ,float z) 
+{
+   float avg=(w+x+y+z)/4;
+    return avg;
+}
+
